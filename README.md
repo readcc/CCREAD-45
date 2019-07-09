@@ -1,6 +1,10 @@
 # CCREAD-45
 
-# What we need to build:
+# Project Setup:
+ - please run npm install to install dependencies
+ - also run npm run build-css to compile CSS
+
+# What we needed to build:
  - We are only required to build the front end.
 
 # Requirements:
