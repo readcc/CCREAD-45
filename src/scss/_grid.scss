@@ -1,0 +1,52 @@
+@import "variables";
+
+.grid {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+[class^='grid_'] {
+  border: 1px solid;
+  box-sizing: border-box;
+  float: left;
+  padding: 1em 0;
+  text-align: center;
+}
+
+
+@for $i from 1 through $grid-columns {
+  .grid_#{$i} {
+    width: percentage($i / $grid-columns);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  
+  .grid {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  @for $i from 1 through $grid-columns {
+  .grid_#{$i} {
+    width: 100%;
+  }
+}
+
+}
+
+
+
+
+
+
+
+
+ 

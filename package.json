@@ -1,0 +1,19 @@
+{
+  "name": "platform45-starter",
+  "version": "0.1.0",
+  "description": "A quick starter using node locally",
+  "main": "platform45.js",
+  "scripts": {
+    "build-css": "node-sass src/scss/ -o dist/css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Clinton Read",
+  "license": "WTFPL",
+  "devDependencies": {
+    "node-sass": "^4.6.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "bootstrap-4-grid": "^2.4.1"
+  }
+}

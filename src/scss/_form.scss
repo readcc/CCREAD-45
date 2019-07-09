@@ -1,0 +1,223 @@
+@import "variables";
+
+.form {
+  padding: 86px 50px;
+  margin: 0 0 14px;
+}
+
+.form_fieldset_group {
+  position: relative;
+  display: block;
+  margin: 0 0 23px;
+  width: 100%;
+}
+
+.form_label {
+  color: $charcoal-grey;
+  padding: 15px;
+  text-align: left;
+}
+
+.form_input {
+  border: 1.2px solid $white;
+  padding: 20px;
+  background: $pale-grey;
+  border-radius: 8px;
+  //font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: all $transition-speed ease-in;
+  -moz-transition: all $transition-speed ease-in;
+  transition: all $transition-speed ease-in;
+}
+
+.form_input:hover {
+  border: 1.2px solid $cloudy-blue;
+  background: $white;
+  -webkit-transition: all $transition-speed ease-in-out $transition-speed;
+  -moz-transition: all $transition-speed ease-in-out $transition-speed;
+  transition: all $transition-speed ease-in-out $transition-speed;
+}
+
+.form_left_panel {
+  background-color: $sunflower-yellow;
+  min-height: 786px;
+  max-height: 100%;
+  padding: 0;
+  @media (min-width: 1024px) {
+    border-radius: 25px 0 0 25px;
+  }
+}
+
+.form_left_panel img.profile {
+  width: 60%;
+  margin: 100px 0;
+  -webkit-transition: all $transition-speed ease-in;
+  -moz-transition: all $transition-speed ease-in;
+  transition: all $transition-speed ease-in;
+}
+
+.form_left_panel img:hover {
+  transform: scale(1.3);
+  -webkit-transition: all $transition-speed ease-in-out $transition-speed;
+  -moz-transition: all $transition-speed ease-in-out $transition-speed;
+  -ms-transition: all $transition-speed ease-in-out $transition-speed;
+  -o-transition: all $transition-speed ease-in-out $transition-speed;
+  transition: all $transition-speed ease-in-out $transition-speed;
+}
+
+.radio_input {
+  border: 1px solid $white;
+  position: relative;
+  display: inline-block;
+  margin-right: 65px;
+  top: -20px;
+}
+
+.radio_hidden {
+  opacity: 0;
+}
+
+.radio_align {
+  text-align: left;
+}
+
+.form_input__radio {
+  position: relative;
+  display: inline-block;
+  margin-right: 65px;
+  top: -20px;
+  color: $cloudy-blue-two;
+  -webkit-transition: all $transition-speed ease-in-out $transition-speed;
+  -moz-transition: all $transition-speed ease-in-out $transition-speed;
+  transition: all $transition-speed ease-in-out $transition-speed;
+}
+
+.form_input__radio:before {
+  border: 1px solid $white;
+  content: "";
+  display: inline-block;
+  position: relative;
+  margin-right: 0;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  background-color: $pale-grey;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all $transition-speed ease-in-out $transition-speed;
+  -moz-transition: all $transition-speed ease-in-out $transition-speed;
+  transition: all $transition-speed ease-in-out $transition-speed;
+}
+
+.form_input__radio:hover::before {
+  border: 1px solid $cloudy-blue;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all $transition-speed ease-in-out $transition-speed;
+  -moz-transition: all $transition-speed ease-in-out $transition-speed;
+  transition: all $transition-speed ease-in-out $transition-speed;
+}
+
+.form_input__radio input#male:checked {
+  background-image: url(../img/male-hover.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio.male:before {
+  background-image: url(../img/male.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio input:checked .female {
+  background-image: url(../img/female-hover.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio.female:before {
+  background-image: url(../img/female.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+//Memebership Buttons
+.form_input__radio.membership {
+  margin-right: 21px;
+}
+
+.form_input__radio.classic:before {
+  background-image: url(../img/card.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio.silver:before {
+  background-image: url(../img/card.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio.gold:before {
+  background-image: url(../img/card.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio input:checked + classic {
+  background-image: url(../img/card-hover.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.radio_buttons {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.2px solid transparent;
+  background-color: $pale-grey;
+  -webkit-transition: all $transition-speed ease-in;
+  -moz-transition: all $transition-speed ease-in;
+  transition: all $transition-speed ease-in;
+}
+
+
+.form_input_date {
+  position: relative;
+  color: $cloudy-blue-two;
+}
+
+.form_input_date:placeholder-shown {
+  font-family: 'Arial';
+}
+
+.form_input_date:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  right: 15px;
+  top: 16px;
+  background-image: url(../img/calendar.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 2;
+}
+
+.hide {
+  height: 0;
+}
+
+
+
+

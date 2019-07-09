@@ -1,0 +1,225 @@
+@import "variables";
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../font/Helvetica Neu Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Arial-BoldMT';
+    src: url('../font/Arial-BoldMT.otf');
+}
+
+input {
+  
+  font-family: 'HelveticaNeue';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input:placeholder-shown {
+  
+  font-family: 'Arial';
+}
+// Default & Desktop
+body {
+  font-family: 'Arial';
+  color: $black;
+  text-align: center;
+}
+
+.profile_heading {
+  font-family: 'Arial';
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.profile_description {
+  font-family: 'Arial';
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.content_heading {
+  font-family: 'Arial-BoldMT';
+  margin: 0 auto;
+  text-align: left;
+}
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 6.4% auto;
+  border-radius: 42.5px;
+  overflow: hidden;
+  -webkit-border-radius: 42.5px;
+  -moz-border-radius: 42.5px;
+  -ms-border-radius: 42.5px;
+  -o-border-radius: 42.5px;
+  -webkit-box-shadow: 0 0 55px $shadow;
+  -moz-box-shadow: 0 0 55px $shadow;
+  -ms-box-shadow: 0 0 55px $shadow;
+  -o-box-shadow: 0 0 55px $shadow;
+  box-shadow: 0 0 55px $shadow;
+}
+
+img.profile {
+  width: 238px;
+  height: 238px;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 24px;
+  color: #383838;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 18px;
+  color: #383838;
+  line-height: 1.26;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  font-weight:normal;
+}
+
+.slide_panel {
+  background-color: $tangerine;
+  display: block;
+  min-height: 900px;
+  max-height: 100px;
+  top: 0px;
+  width: 100%;
+  padding: 185px 85px;
+  text-align: left;
+  position: absolute;
+  left: -100%;
+  z-index: 10000;
+  transition: all $transition-speed ease-out;
+  
+}
+
+.slide {
+  left: 0;
+
+}
+
+.slider_panel h3 {
+  line-height: 1.53;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.slider_panel p {
+  line-height: 1.53;
+  font-size: 16px;
+}
+
+
+
+// Mobile Setup
+@media only screen and (max-width: 1024px) {
+  body{margin:0;}
+  
+  .container,.slide_panel, .form {
+    display :block;
+    border-radius: 0;
+    margin:0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .slide_button img {
+    transform: rotate(90deg);
+  }
+ 
+ 
+  .button {
+      width: 100%
+  }  
+
+  .slide_panel {
+    position: absolute;  
+    top: -100%;
+    width: 100%;
+    left: 0;
+    min-height: 900px;
+    max-height: 400px; 
+    padding: 125px 85px;
+    overflow: hidden;
+    border-radius: 0;
+    max-height: none;
+  }
+  
+  .slide {  
+    top: 0;
+    
+  }
+  
+  .slide_button_rotate {
+    transform: rotate(90deg) ;  
+  }
+}
+
+
+.swatch {
+  width: 100px;
+  height: 50px;
+  
+}
+
+.swatch-charcoal-grey {
+  background-color: $charcoal-grey;
+}
+
+.swatch-greeny-blue {
+  background-color: $greeny-blue;
+}
+
+.swatch-tiffany-blue {
+  background-color: $tiffany-blue;
+}
+
+.swatch-cloudy-blue-two {
+  background-color: $cloudy-blue-two;
+}
+
+.swatch-pale-grey {
+  background-color: $pale-grey;
+}
+
+.swatch-tangerine {
+  background-color: $tangerine;
+}
+
+.swatch-cloudy-blue {
+  background-color: $cloudy-blue;
+}
+
+.swatch-sunflower-yellow {
+  background-color: $sunflower-yellow;
+}
+
+
+.font-swatch-arial {
+  font-family: 'Arial';
+}
+
+
