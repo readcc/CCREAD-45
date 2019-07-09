@@ -1,4 +1,4 @@
-# CCREAD-45
+# Platform 45 - Frontend Challenge
 
 # Project Setup:
  - please run ```npm install``` to install dependencies
