@@ -10,7 +10,7 @@
   "author": "Clinton Read",
   "license": "WTFPL",
   "devDependencies": {
-    "node-sass": "^4.6.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.12.1"
   },
   "dependencies": {
